@@ -6,12 +6,6 @@
 \contentsline {subsubsection}{\numberline {2.1.2}Bieguny rzeczywiste o przeciwnych znakach}{3}{subsubsection.2.1.2}%
 \contentsline {subsubsection}{\numberline {2.1.3}Bieguny zespolone z ujemną częścią rzeczywistą}{4}{subsubsection.2.1.3}%
 \contentsline {subsubsection}{\numberline {2.1.4}Bieguny zespolone z dodatnią częścią rzeczywistą}{5}{subsubsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.2}Identyfikacja systemów z czasem ciągłym na podstawie odpowiedzi skokowej}{6}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Bieguny rzeczywiste, ujemne}{6}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Bieguny rzeczywiste o przeciwnych znakach}{6}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Bieguny zespolone z ujemną częścią rzeczywistą}{6}{subsubsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.4}Bieguny zespolone z dodatnią częścią rzeczywistą}{6}{subsubsection.2.2.4}%
-\contentsline {subsubsection}{\numberline {2.2.5}Porównanie wyników identyfikacji z rzeczywistymi wartościami}{6}{subsubsection.2.2.5}%
-\contentsline {section}{\numberline {3}Badanie systemów z czasem dyskretnym}{6}{section.3}%
-\contentsline {section}{\numberline {4}Podsumowanie i wnioski}{6}{section.4}%
-\contentsline {section}{\numberline {5}Bibliografia}{6}{section.5}%
+\contentsline {subsection}{\numberline {2.2}Identyfikacja systemu z czasem ciągłym na podstawie odpowiedzi skokowej}{6}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Podsumowanie i wnioski}{11}{section.3}%
+\contentsline {section}{\numberline {4}Bibliografia}{11}{section.4}%

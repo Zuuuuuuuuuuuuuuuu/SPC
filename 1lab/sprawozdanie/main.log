@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.3.8)  2 NOV 2022 21:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.3.8)  3 NOV 2022 02:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -847,7 +847,7 @@ Package pgfplots Warning: running in backwards compatibility mode (unsuitable ti
  on input line 27.
 
 (/home/zuzanna/Pulpit/sem5/SPC/1lab/sprawozdanie/strona_tytulowa.tex
-<logo-PWr.png, id=71, 540.0978pt x 135.8676pt>
+<logo-PWr.png, id=47, 540.0978pt x 135.8676pt>
 File: logo-PWr.png Graphic file (type png)
 <use logo-PWr.png>
 Package pdftex.def Info: logo-PWr.png  used on input line 4.
@@ -869,52 +869,76 @@ Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 54.
 
-<rzeczywiste_ujemne.png, id=107, 3374.87263pt x 1798.5685pt>
+<rzeczywiste_ujemne.png, id=77, 3374.87263pt x 1798.5685pt>
 File: rzeczywiste_ujemne.png Graphic file (type png)
 <use rzeczywiste_ujemne.png>
 Package pdftex.def Info: rzeczywiste_ujemne.png  used on input line 66.
 (pdftex.def)             Requested size: 512.1496pt x 272.92969pt.
 [2]
-<rzeczywiste_przeciwne_znaki.png, id=121, 3374.87263pt x 1855.83905pt>
+<rzeczywiste_przeciwne_znaki.png, id=91, 3374.87263pt x 1855.83905pt>
 File: rzeczywiste_przeciwne_znaki.png Graphic file (type png)
 <use rzeczywiste_przeciwne_znaki.png>
-Package pdftex.def Info: rzeczywiste_przeciwne_znaki.png  used on input line 94.
+Package pdftex.def Info: rzeczywiste_przeciwne_znaki.png  used on input line 90.
 (pdftex.def)             Requested size: 512.1496pt x 281.62039pt.
  [3 </home/zuzanna/Pulpit/sem5/SPC/1lab/sprawozdanie/rzeczywiste_ujemne.png (PNG copy)>]
-<zespolone_ujemne.png, id=128, 3374.87263pt x 1787.6598pt>
+<zespolone_ujemne.png, id=98, 3374.87263pt x 1787.6598pt>
 File: zespolone_ujemne.png Graphic file (type png)
 <use zespolone_ujemne.png>
-Package pdftex.def Info: zespolone_ujemne.png  used on input line 118.
+Package pdftex.def Info: zespolone_ujemne.png  used on input line 113.
 (pdftex.def)             Requested size: 512.1496pt x 271.2743pt.
  [4 </home/zuzanna/Pulpit/sem5/SPC/1lab/sprawozdanie/rzeczywiste_przeciwne_znaki.png (PNG copy)>]
-<zespolone_dodatnia.png, id=137, 3374.87263pt x 1793.11415pt>
+<zespolone_dodatnia.png, id=107, 3374.87263pt x 1793.11415pt>
 File: zespolone_dodatnia.png Graphic file (type png)
 <use zespolone_dodatnia.png>
-Package pdftex.def Info: zespolone_dodatnia.png  used on input line 141.
+Package pdftex.def Info: zespolone_dodatnia.png  used on input line 135.
 (pdftex.def)             Requested size: 512.1496pt x 272.10199pt.
- [5 </home/zuzanna/Pulpit/sem5/SPC/1lab/sprawozdanie/zespolone_ujemne.png (PNG copy)>] [6 </home/zuzanna/Pulpit/sem5/SPC/1lab/sprawozdanie/zespolone_dodatnia.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 172.
+ [5 </home/zuzanna/Pulpit/sem5/SPC/1lab/sprawozdanie/zespolone_ujemne.png (PNG copy)>]
+<obojetnie.jpg, id=114, 572.1375pt x 415.5525pt>
+File: obojetnie.jpg Graphic file (type jpg)
+<use obojetnie.jpg>
+Package pdftex.def Info: obojetnie.jpg  used on input line 147.
+(pdftex.def)             Requested size: 426.79134pt x 309.98962pt.
+ [6 </home/zuzanna/Pulpit/sem5/SPC/1lab/sprawozdanie/zespolone_dodatnia.png (PNG copy)>]
+<punkty.png, id=121, 1065.19696pt x 585.22989pt>
+File: punkty.png Graphic file (type png)
+<use punkty.png>
+Package pdftex.def Info: punkty.png  used on input line 155.
+(pdftex.def)             Requested size: 512.1496pt x 281.38043pt.
+ [7 </home/zuzanna/Pulpit/sem5/SPC/1lab/sprawozdanie/obojetnie.jpg>]
+<curve_fitting.png, id=128, 968.61874pt x 716.6775pt>
+File: curve_fitting.png Graphic file (type png)
+<use curve_fitting.png>
+Package pdftex.def Info: curve_fitting.png  used on input line 163.
+(pdftex.def)             Requested size: 512.1496pt x 378.95149pt.
+ [8 </home/zuzanna/Pulpit/sem5/SPC/1lab/sprawozdanie/punkty.png (PNG copy)>]
+<curve.png, id=135, 439.90434pt x 329.92827pt>
+File: curve.png Graphic file (type png)
+<use curve.png>
+Package pdftex.def Info: curve.png  used on input line 177.
+(pdftex.def)             Requested size: 341.43306pt x 256.08946pt.
+ [9 </home/zuzanna/Pulpit/sem5/SPC/1lab/sprawozdanie/curve_fitting.png>] [10 </home/zuzanna/Pulpit/sem5/SPC/1lab/sprawozdanie/curve.png (PNG copy)>] [11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
  (/home/zuzanna/Pulpit/sem5/SPC/1lab/sprawozdanie/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 172.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 172.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 246.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5556F886A4A1183E364D4C445EB4C3A9;1458.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 172.
+(rerunfilecheck)             Checksum: C317274E2F23E660A4D8C2D7C7A39A6F;851.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 246.
  ) 
 Here is how much of TeX's memory you used:
- 30901 strings out of 483148
- 712596 string characters out of 5965417
- 1132295 words of memory out of 5000000
- 45317 multiletter control sequences out of 15000+600000
- 546300 words of font info for 50 fonts, out of 8000000 for 9000
+ 30942 strings out of 483148
+ 713083 string characters out of 5965417
+ 1132294 words of memory out of 5000000
+ 45341 multiletter control sequences out of 15000+600000
+ 546637 words of font info for 51 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
  68i,6n,98p,769b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1728.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.603pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2986.603pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti2488.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on /home/zuzanna/Pulpit/sem5/SPC/1lab/sprawozdanie/main.pdf (7 pages, 369893 bytes).
+ </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1728.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.603pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2986.603pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti2488.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on /home/zuzanna/Pulpit/sem5/SPC/1lab/sprawozdanie/main.pdf (12 pages, 513890 bytes).
 PDF statistics:
- 515 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 564 PDF objects out of 1000 (max. 8388607)
+ 205 compressed objects within 3 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 138 words of extra memory for PDF output out of 10000 (max. 10000000)
 

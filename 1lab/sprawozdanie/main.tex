@@ -31,7 +31,7 @@
 \newpage
 
 \section{Cel ćwiczenia}
-Celem ćwiczenia jest zapoznanie się z charakterystykami czasowymi systemów. Ćwiczenie można podzielić na dwie części - badanie systemu z czasem ciągłym oraz dyskretnym. Zapoznano się z zależnością charakterystyki skokowej od położenia biegunów transmitancji układów zarówno z czasem ciągłym jak i dyskretnym. Podjęta została także próba identyfikacji systemów z czasem ciągłym i dyskretnym na podstawie charakterystyk skokowych.
+Celem ćwiczenia jest zapoznanie się z charakterystykami czasowymi systemów. Ćwiczenie można podzielić na dwie części - zapoznanie się z zależnością charakterystyki skokowej od położenia biegunów transmitancji układów oraz próba identyfikacji systemów z czasem ciągłym na podstawie charakterystyk skokowych.
 
 
 \section{Badanie systemów z czasem ciągłym}
@@ -68,10 +68,7 @@ Wygenerowano odpowiedź skokową systemu:
 \end{figure}
 
 
-
-\colorbox{WildStrawberry}{tutaj z matlaba}
-
-Układ jest stabilny (stabilizuje się na wartości \colorbox{WildStrawberry}{jakiej}) oraz nie ma oscylacji.
+Układ jest stabilny (stabilizuje się na wartości $\approx 0,16667$) oraz nie ma oscylacji.
 
 
 \subsubsection{Bieguny rzeczywiste o przeciwnych znakach}
@@ -87,7 +84,6 @@ Transmitancja systemu to:
 \end{equation}
 
 Wygenerowano odpowiedź skokową systemu:
-\colorbox{WildStrawberry}{tutaj z matlaba}
 
 \begin{figure}[H]
     \centering
@@ -111,15 +107,14 @@ Transmitancja systemu to:
 \end{equation}
 
 Wygenerowano odpowiedź skokową systemu:
-\colorbox{WildStrawberry}{tutaj z matlaba}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=18cm]{zespolone_ujemne.png}
-    \caption{Odpowiedź skokowa układu o transmitancji, której bieguny są zespolone a ujemną częścią rzeczywistą}
+    \caption{Odpowiedź skokowa układu o transmitancji, której bieguny są zespolone z ujemną częścią rzeczywistą}
 \end{figure}
 
-Układ jest stabilny (stabilizuje się na wartości \colorbox{WildStrawberry}{jakiej}) oraz ma oscylacje.
+Układ jest stabilny (stabilizuje się na wartości $\approx 1$) oraz ma oscylacje.
 
 \subsubsection{Bieguny zespolone z dodatnią częścią rzeczywistą}
 
@@ -134,7 +129,6 @@ Transmitancja systemu to:
 \end{equation}
 
 Wygenerowano odpowiedź skokową systemu:
-\colorbox{WildStrawberry}{tutaj z matlaba}
 
 \begin{figure}[H]
     \centering
@@ -145,28 +139,108 @@ Wygenerowano odpowiedź skokową systemu:
 Układ nie jest stabilny oraz ma oscylacje.
 
 
-\subsection{Identyfikacja systemów z czasem ciągłym na podstawie odpowiedzi skokowej}
-\subsubsection{Bieguny rzeczywiste, ujemne}
+\subsection{Identyfikacja systemu z czasem ciągłym na podstawie odpowiedzi skokowej}
+Dana jest charakterystyka czasowa:
 
-Odpowiedź skokowa wygląda następująco:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{obojetnie.jpg}
+    \caption{Odpowiedź skokowa do identyfikacji systemu}
+\end{figure}
 
+W celu identyfikacji, czyli wyznaczenia transmitancji systemu na podstawie charakterystyki czasowej, skorzystano z narzędzia dostępnego w Matlabie - \textit{Curve Fitting}. Na początku wyznaczono punkty - szczyty funkcji odpowiedzi skokowej:
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=18cm]{punkty.png}
+    \caption{Punkty do wyznaczenia eksponenty}
+\end{figure}
 
-\subsubsection{Bieguny rzeczywiste o przeciwnych znakach}
-\subsubsection{Bieguny zespolone z ujemną częścią rzeczywistą}
-\subsubsection{Bieguny zespolone z dodatnią częścią rzeczywistą}
+Następnie dobrano do wartości tych punktów eksponentę za pomocą \textit{Curve Fitting}:
 
-\subsubsection{Porównanie wyników identyfikacji z rzeczywistymi wartościami}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=18cm]{curve_fitting.png}
+    \caption{Curve Fitting}
+\end{figure}
 
-\section{Badanie systemów z czasem dyskretnym}
+Wzór dopasowanej przez program funkcji eksponencjalnej to:
+
+\begin{equation}
+    1,509 \cdot e^{(-0,04563x)} +0,9424
+\end{equation}
+
+Na poniższym rysunku przedstawiono odpowiedź skokową do identyfikacji wraz z dopasowaną eksponentą:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12cm]{curve.png}
+    \caption{Odpowiedź skokowa i wyznaczona eksponenta}
+\end{figure}
+
+Ze wzoru na funkcję eksponencjalną można odczytać parametry transmitancji systemu. Szukana transmitancja jest postaci:
+\begin{equation}
+        K(s) = \frac{1}{s^2+as+b}
+\end{equation}
+
+Z twierdzenia Abela wynika, że system ustabilizuje się na wartości, którą można wyliczyć jako granicę przy $s$ dążącym do 0. Ponadto z wykresu można odczytać, że wykres stabilizuje się na wartości 1. Zatem:
+
+\begin{equation*}
+    \lim_{s \to 0} K(s) = \frac{1}{b} = 1 \Longrightarrow b =1
+\end{equation*}
+
+Wyznaczenie parametru $a$ zaczęto od odczytania okresu oscylacji charakterystyki czasowej $T \approx 5 s$. Następnie wykorzystano poniższy wzór i wyznaczono pulsację:
+
+\begin{equation*}
+    \omega = \frac{2 \pi}{T} = \frac{2 \pi}{5} \approx 1,26
+\end{equation*}
+
+Bieguny transmitancji mają postać:
+
+\begin{equation}
+    b_{1,2} = \sigma \pm \omega j
+\end{equation}
+
+gdzie $\sigma = -0,04563 \approx -0,046$ ze wzoru eksponenty. Zatem:
+
+\begin{equation}
+    b_{1,2} = -0,046 \pm 1,26j
+\end{equation}
+
+Wstawiając wartości biegunów do transmitancji otrzymano:
+
+\begin{equation}
+    K(s) = \frac{1}{(s- (-0,046 - 1,26j))(s+0.046 + 1,26j)} = \frac{1}{s^2+0,092s+1,5876}
+\end{equation}
+
+Zatem wartość parametru $a = 0,092$.
+
+Z identyfikacji systemu wyznaczono transmitancję:
+\begin{equation}
+    K(s) = \frac{1}{s^2+0,092s+1}
+\end{equation}
+
+Rzeczywista transmitancja identyfikowanego systemu miała postać:
+
+\begin{equation}
+    K(s) = \frac{1}{s^2+0,1s+1}
+\end{equation}
 
 \section{Podsumowanie i wnioski}
+\begin{itemize}
+    \item Zbadane zostały charakterystyki czasowe systemów w czasie ciągłym. Położenie biegunów transmitancji ma wpływ na odpowiedź skokową układu. 
+    \item Bieguny rzeczywiste ujemne generują odpowiedź bez oscylacji, dążącą do pewnej stabilnej wartości. 
+    \item Układ, którego bieguny są rzeczywiste, ale o przeciwnych znakach, jest niestabilny i bez oscylacji. Jego odpowiedź skokowa dąży do nieskończoności. 
+    \item Układ z biegunami zespolonymi z ujemną częścią rzeczywistą generuje odpowiedź skokową z gasnącymi oscylacjami. Taki układ jest stabilny. 
+    \item Bieguny zespolone z dodatnią częścią rzeczywistą generują odpowiedź skokową, której oscylacje narastają. Układ jest niestabilny.
+    \item Matlab posiada narzędzia, które umożliwiają identyfikację systemu (Curve Fitting).
+    \item Transmitancja wyznaczona eksperymentalnie na podstawie odpowiedzi skokowej w przybliżeniu zgadza się z transmitancją rzeczywistą. Różnica przy parametrze $a$ to $0,08$.
+\end{itemize}
 
 \section{Bibliografia}
 \begin{enumerate}
-    \item
-%    \item https://www.dbc.wroc.pl/Content/16126/PDF/czempik_praktyczne.pdf
-%   \item https://eia.pg.edu.pl/documents/1113028/0/WwT14_KSS_2014_2015_Obiekty_sterowania_i_ich_identyfikacja.pdf
+    \item A. Czemplik "Praktyczne wprowadzenie do opisu, analizy i symulacji dynamiki obiektów"
+    \item K. Duzinkiewicz, Prezentacja "Obiekty sterowania i ich identyfikacja", Komputerowe systemy sterowania 2014/2015 
 \end{enumerate}
 
 \end{document}
