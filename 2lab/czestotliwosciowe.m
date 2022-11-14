@@ -3,32 +3,40 @@ close all;
 
 [t]=sim("czestotl");
 
+
 figure(1);
 hold on;
 grid on;
-subplot(1,3,1);
-plot(t.w1, 'go');
+%subplot(1,3,1);
+plot(t.w1, 'r');
 hold on;
-plot(t.sin1, 'rx');   %zmienic kolory
+plot(t.sin1, 'k');   %zmienic kolory
+legend('odpowiedz ukladu', 'pobudzenie sinusoidalne');
 % xlabel('t [s]');
 % ylabel('y(t)');
-title('w=0.1');
-
-subplot(1,3,2);
-plot(t.w2);
-hold on;
-plot(t.sin2, 'rx');
-% xlabel('t [s]');
-% ylabel('y(t)');
-title('w2=1');
-
-subplot(1,3,3);
-plot(t.w3);
-hold on;
-plot(t.sin3, 'rx');
-% xlabel('t [s]');
-% ylabel('y(t)');
-title('w3=10');
+%title('w=0.1');
+% 
+% figure(2);
+% %subplot(1,3,2);
+% plot(t.w2, 'r');
+% hold on;
+% grid on;
+% plot(t.sin2, 'k');
+% legend('odpowiedz ukladu', 'pobudzenie sinusoidalne');
+% % xlabel('t [s]');
+% % ylabel('y(t)');
+% %title('w2=1');
+% 
+% figure(3);
+% %subplot(1,3,3);
+% plot(t.w3, 'r');
+% hold on;
+% grid on;
+% plot(t.sin3, 'k');
+% legend('odpowiedz ukladu', 'pobudzenie sinusoidalne');
+% % xlabel('t [s]');
+% % ylabel('y(t)');
+% %title('w3=10');
 
 
 %bode([1], [1 0.1 1]);
