@@ -65,7 +65,7 @@ Pobudzono układ sygnałem $u_1(t)=sin(0,1 t)$. Poniżej przedstawiono porównan
     \caption{Odpowiedź systemu o transmitancji K(s) na pobudzenie $u_1(t)=sin(0,1 t)$}
 \end{figure}
 
-Odpowiedź układu prawie idealnie pokrywa się z pobudzeniem sinusoidalnym. Amplituda wynosi $A=1$ oraz nie ma przesunięcia fazowego $ \varphi=0$.
+Odpowiedź układu prawie idealnie pokrywa się z pobudzeniem sinusoidalnym. Amplituda wynosi $A=1$ oraz przesunięcie fazowe $ \varphi=0$.
 
 \subsection{Odpowiedź systemu na pobudzenie sinusoidalne, gdy pulsacja $\omega = 1$}
 Pobudzono układ sygnałem $u_2(t)=sin(1 t)$. Poniżej przedstawiono porównanie pobudzenia sinusoidalnego (kolor czarny na wykresie) z odpowiedzią systemu (kolor czerwony na wykresie).
@@ -84,7 +84,7 @@ Na Rysunku \ref{fig:2} przedstawiony został fragment odpowiedzi układu. Widać
     \label{fig:2.22}
 \end{figure}
 
-Ze względu na to, że osie na wykresie są w dziedzinie czasu, nie można bezpośrednio odczytać przesunięcia fazowego. Aby wyznaczyć przesunięcie fazowe można skorzystać ze wzoru:
+Widać, że funkcje są względem siebie przesunięte o jakiś kąt. Ze względu na to, że osie na wykresie są w dziedzinie czasu, nie można bezpośrednio odczytać przesunięcia fazowego. Aby wyznaczyć przesunięcie fazowe można skorzystać ze wzoru:
 \begin{equation}
     \varphi = \frac{2 \pi}{T} \cdot \tau.
 \end{equation}
@@ -114,7 +114,7 @@ Pobudzono układ sygnałem $u_3(t)=sin(10 t)$. Poniżej przedstawiono porównani
     \label{fig:2.3}
 \end{figure}
 
-Na Rysunku \ref{fig:2.3} zaznaczono najbardziej wychylony punkt, który oznacza amplitudę odpowiedzi układu: $A \approx 0.1$. Ponadto, z Rysunku \ref{fig:2.3} można odczytać przesunięcie fazowe. Obydwa wykresy przechodzą przez oś $x$ w tych samych punktach (zaznaczono jeden taki punkt na rysunku), jednak ich przesunięcie fazowe nie jest równe 0, a $180 ^\circ$. Można to wywnioskować po tym, że kiedy na jednym wykresie lokalnie jest "górka", na drugim lokalnie jest "dolina". To oznacza, że są odwrócone w fazie o $\varphi = 180 ^\circ$.
+Na Rysunku \ref{fig:2.3} zaznaczono najbardziej wychylony punkt, który oznacza amplitudę odpowiedzi układu: $A \approx 0,1$. Ponadto, z Rysunku \ref{fig:2.3} można odczytać przesunięcie fazowe. Obydwa wykresy przechodzą przez oś $x$ w tych samych punktach (zaznaczono jeden taki punkt na rysunku), jednak ich przesunięcie fazowe nie jest równe 0, a $180 ^\circ$. Można to wywnioskować po tym, że kiedy na jednym wykresie lokalnie jest ,,górka", na drugim lokalnie jest ,,dolina". To oznacza, że są odwrócone w fazie o $\varphi = 180 ^\circ$.
 
 \subsection{Porównanie}
 Powyższe badania potwierdziły, że wzmocnienie amplitudy $A$ oraz przesunięcie fazowe $\varphi$ są zależne od $\omega$. Nie ma jednak jednoznacznej i uniwersalnej zależności dla każdego typu systemów jak $\omega$ wpływa na amplitudę i przesunięcie fazowe, ale można to sprawdzić na przykład za pomocą charakterystyk Bodego. Dla układu o transmitancji \ref{transmitancja} charakterystyka Bodego wygląda następująco:
@@ -124,7 +124,6 @@ Powyższe badania potwierdziły, że wzmocnienie amplitudy $A$ oraz przesunięci
     \includegraphics[width=\textwidth]{bode.jpg}
     \caption{Charakterystyka Bodego dla układu o transmitancji $K(s) = \frac{1}{s^2+0,1s+1}$}
 \end{figure}
-
 Z rozważań wynikło, że:
 \begin{enumerate}
     \item kiedy $\omega = 0,1$, amplituda $A=1$ i przesunięcie fazowe $\varphi = 0 ^\circ$;
@@ -141,8 +140,89 @@ Można zauważyć, że zgadza się to z amplitudą i przesunięciem fazowym ukaz
 
 \section{Badania w dziedzinie częstotliwościowej}
 \subsection{Charakterystyka amplitudowo-fazowa}
+Podana została transmitancja układu:
+\begin{equation}
+    K(s) = \frac{1}{s+1}.
+    \label{af}
+\end{equation}
+Obliczono transmitancję widmową układu:
+\begin{equation}
+    K(j\omega) = \frac{1}{j\omega + 1} = \frac{1\cdot (1-j\omega)}{(1+j\omega)\cdot (1-j\omega)} = \frac{1-j\omega}{1+\omega^2} 
+\end{equation}
+oraz wydzielono części rzeczywistą i urojoną transmitancji widmowej:
+\begin{equation}
+    Re(K(j\omega)) = \frac{1}{1+\omega^2}
+\end{equation}
+\begin{equation}
+    Im(K(j\omega)) = \frac{-\omega}{1+\omega^2}.
+\end{equation}
+
+Na ich podstawie można wygenerować charakterystykę częstotliwościową, która stanowi rzut trójwymiarowej krzywej w przestrzeni ($\omega$, $ReK(j\omega)$, $ImK(j\omega)$ ), gdzie $\omega \in  [0, \infty)$, na płaszczyznę ($ReK(j\omega)$, $ImK(j\omega)$). Na poniższych rysunkach przedstawiono schemat w Simulinku (\ref{sim_af}) oraz charakterystykę częstotliwościową układu o wyznaczonej transmitancji (\ref{af}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{sim_af.png}
+    \caption{Schemat Simulink do rysowania charakterystyki częstotliwościowej}
+    \label{sim_af}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{af.png}
+    \caption{Charakterystyka częstotliwościowa układu o transmitancji $K(s) = \frac{1}{s+1}$ }
+    \label{af}
+\end{figure}
+
+Charakterystyka przechodzi przez 1 ćwiartkę, gdyż jest to charakterystyka układu pierwszego rzędu. Ma swój początek w punkcie (1,0j) i koniec w punkcie (0,0j).
+
 \subsection{Analiza charakterystyki częstotliwościowej układu opóźniającego z inercją}
+Transmitancja układu opóźniającego z inercją to:
+\begin{equation}
+    K(s) = \frac{k}{Ts+1} \cdot e^{-s \tau},
+\end{equation}
+gdzie \textit{k} to wzmocnienie, \textit{T} to stała czasowa oraz \textit{$\tau$} to opóźnienie układu. Wartości tych trzech parametrów mają wpływ na charakterystykę amplitudowo-fazową układu. Przyjmując przykładowe dane:
+\begin{itemize}
+    \item k = 1
+    \item T = 1
+    \item $\tau$ = 2
+\end{itemize}
+transmitancja układu wyniesie:
+\begin{equation}
+    K(s) = \frac{1}{s+1} \cdot e^{-2s },
+\end{equation}
+czyli transmitancja widmowa będzie miała postać:
+\begin{equation}
+    \begin{aligned}
+    K(j\omega) = \frac{1}{j\omega+1} \cdot e^{-2j\omega} = \frac{1}{1+j\omega} \cdot (cos(2\omega)-jsin(2\omega))  = \\ = \frac{cos(2\omega)-jsin(2\omega)}{1+j\omega} \cdot \frac{1-j\omega}{1-j\omega} = \frac{cos(2\omega)-j\omega cos(2\omega) - jsin(2\omega)-\omega sin(2\omega)}{1+\omega^2} = \\ = \frac{cos(2\omega) - \omega sin (2\omega)}{1+\omega^2} + j \cdot \frac{- \omega cos(2\omega)-sin(2\omega)}{1+\omega^2}
+\end{aligned}
+\end{equation}
+
+Część rzeczywista oraz urojona transmitancji widmowej wynoszą:
+\begin{equation}
+    Re(K(j\omega)) = \frac{cos(2\omega) - \omega sin (2\omega)}{1+\omega^2}
+\end{equation}
+
+\begin{equation}
+    Im(K(j\omega)) = \frac{- \omega cos(2\omega)-sin(2\omega)}{1+\omega^2}
+\end{equation}
+
+Na ich podstawie i korzystając ze schematu Simulink \ref{sim_af} wygenerowano charakterystykę częstotliwościową:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{kreciolek.png}
+    \caption{Charakterystyka częstotliwościowa układu o transmitancji $K(s) =\frac{1}{s+1} \cdot e^{-2s }$ }
+\end{figure}
+
+Charakterystyka ma postać spirali, która ma swój początek w punkcie (1, 0j) ze względu na wartość wzmocnienia $k = 1$ oraz zbiega do punktu (0, 0j).
 
 \section{Podsumowanie i wnioski}
+\begin{enumerate}
+    \item Podczas ćwiczenia wykazano, że charakterystyka czasowa odpowiedzi systemu na pobudzenie sinusoidalne zależy od wartości zadanej pulsacji $\omega$. W odpowiedzi systemu zmienia się amplituda oraz przesunięcie fazowe, natomiast pulsacja zostaje identyczna jak pulsacja sygnału pobudzającego.
+    \item Charakterystyka czasowa odpowiedzi systemu na pobudzenie sinusoidalne odwzorowuje charakterystykę Bodego w dziedzinie częstotliwości. Z charakterystyk czasowych wyznaczono amplitudy oraz przesunięcia fazowe odpowiedzi układu, które okazały się poprawne i zgodne z tym, co pokazywał wykres Bodego.
+    \item Z charakterystyki częstotliwościowej można odczytać amplitudę oraz przesunięcie fazowe. W zależności od rzędu badanego układu, wykres przechodzi przez różną liczbę ćwiartek wykresu - dla układu pierwszego rzędu będzie to jedna ćwiartka, dla układu drugiego rzędu - dwie ćwiartki itd.
+    \item Charakterystyka częstotliwościowa układu opóźniającego z inercją przypomina spiralę zawijającą się dookoła początku układu współrzędnych. Jej wygląd zależy od parametrów - wzmocnienia $k$, stałej czasowej $T$ oraz opóźnienia $\tau$. 
+    \item Od wzmocnienia zależy gdzie rozpocznie się spirala (dla $k=1$ zaczynała się w punkcie (1, 0j)). Od opóźnienia zależy jak ,,rozległa'' jest spirala (dla $\tau = 2$ będzie sięgać dalej niż dla $\tau = 1$). W miarę zwiększania stałej czasowej spirala zbliża się do 0 (dla $T=1$ spirala zawijała się dookoła punktu 0, natomiast dla $T=0$, charakterystyka byłaby okręgiem, a nie spiralą). 
+\end{enumerate}
 
 \end{document}

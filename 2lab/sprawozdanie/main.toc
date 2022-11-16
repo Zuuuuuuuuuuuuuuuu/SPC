@@ -7,5 +7,5 @@
 \contentsline {subsection}{\numberline {2.4}Porównanie}{5}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Badania w dziedzinie częstotliwościowej}{7}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Charakterystyka amplitudowo-fazowa}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Analiza charakterystyki częstotliwościowej układu opóźniającego z inercją}{7}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Podsumowanie i wnioski}{7}{section.4}%
+\contentsline {subsection}{\numberline {3.2}Analiza charakterystyki częstotliwościowej układu opóźniającego z inercją}{8}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Podsumowanie i wnioski}{9}{section.4}%
