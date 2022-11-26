@@ -1,0 +1,8 @@
+\babel@toc {polish}{}
+\contentsline {section}{\numberline {1}Cel ćwiczenia}{2}{section.1}%
+\contentsline {section}{\numberline {2}Badanie układu automatycznej regulacji w czasie ciągłym}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Układ automatycznej regulacji z regulatorem typu P}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Układ automatycznej regulacji z regulatorem typu PI}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Wskaźnik jakości regulacji}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Badanie układu automatycznej regulacji w czasie dyskretnym}{5}{section.3}%
+\contentsline {section}{\numberline {4}Podsumowanie i wnioski}{6}{section.4}%

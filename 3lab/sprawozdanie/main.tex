@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage[table,xcdraw,dvipsnames]{xcolor}
+\usepackage{color}
+\usepackage{subfig}
+\usepackage{sidecap}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{anyfontsize}
+\usepackage{indentfirst}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{pgfplots}
+\usepackage{fancyhdr}
+
+\newgeometry{tmargin=1.8cm,bmargin=1.8cm,lmargin =1.8cm,rmargin=1.8cm}
+
+\begin{document}
+
+\newcommand{\zdjecie}[3]
+{
+    \begin{figure}[H]
+        \renewcommand{\figurename}{Rys.}
+        \centering
+        \includegraphics[width=\textwidth]{#1}
+        \caption{#2}
+        \label{#3}
+    \end{figure}
+}
+
+\input{strona_tytulowa.tex}
+\tableofcontents
+\newpage
+
+\section{Cel ćwiczenia}
+Ćwiczenie było poświęcone badaniom układu automatycznej regulacji w czasie ciągłym oraz dyskretnym. Badano układy z regulatorami typu P oraz PI. Skupiono się na zależnościach między parametrami regulatorów ($k_1, k_2$) a uchybem. W przypadku badań w czasie dyskretnym, analizowano wpływ czasu próbkowania $T_d$ na uchyb.
+\section{Badanie układu automatycznej regulacji w czasie ciągłym}
+\subsection{Układ automatycznej regulacji z regulatorem typu P}
+Dany jest obiekt regulacji o transmitancji $K_O(s) = \frac{1}{(s+1)^3}$ połączony szeregowo z regulatorem proporcjonalnym o nieznanej transmitancji $K_R(s)=k_1$. Układ $K_{OTW} = K_O(s) \cdot K_R(s)$ jest zamknięty sprzężeniem zwrotnym umożliwiającym powstanie uchybu regulacji $ \mathcal{E} = y_0(t) - y(t)$ jako sygnału wejścia na regulator. Schemat układu został przedstawiony na rys. \ref{schemat_p}.
+
+\zdjecie{sim_p.png}{Schemat Simulink układu automatycznej regulacji z regulatorem typu P}{schemat_p}
+
+Ten układ automatycznej regulacji jest stabilny dla $k_1 \in (-1, 8) $. Dla wybranych wartości $k_1$ z przedziału stabilności $ k_1 = [0,5 ; 2 ; 5 ; 7,5] $ narysowano charakterystyki czasowe (rys. \ref{czasowe}).
+
+\zdjecie{reg_p.png}{Charakterystyki czasowe układu automatycznej regulacji dla wybranych wartości regulatora proporcjonalnego}{czasowe}
+
+Dla wartości $k_1 = 5$ zauważa się, że układ ma przeregulowania na początku, później stabilizuje się na wartości około 0,82. 
+
+\subsection{Układ automatycznej regulacji z regulatorem typu PI}
+Dla wybranej wartości $k_1 = 5$ dołączono do regulatora równolegle gałąź z członem całkującym. Ta operacja ma na celu zmniejszenie uchybu.
+
+\zdjecie{schemat_pi.png}{Schemat UAR z regulatorem typu PI}{schemat_pi}
+
+Ten UAR jest stabilny dla $k_2 \in (0,2)$. Dla wybranych wartości $k_2 = [0,5 ; 1 ; 1,5 ; 2]$ narysowano charakterystyki czasowe (rys. \ref{char_pi}).
+
+\zdjecie{char_pi.png}{Charakterystyki czasowe UAR z regulatorem typu PI}{char_pi}
+
+Dla $k_2 = 2$ układ jest niestabilny. W pozostałych przypadkach dzięki dodaniu regulatora typu I, zminimalizowany został uchyb i charakterystyka czasowa stabilizuje się na wartości około 1. Im mniejsze $k_2$ tym mniejsze przeregulowania i szybsza stabilizacja układu.
+
+\subsection{Wskaźnik jakości regulacji}
+Właściwy dobór nastaw regulatora, czyli parametrów $k_1, k_2$ zagwarantuje stabilną pracę układu regulacji automatycznej oraz odpowiednią jej jakość. Jednym ze wskaźników jakości regulacji jest całka z kwadratu uchybu:
+
+\begin{equation}
+    Q = \int_{0}^{\infty} \mathcal{E} ^2 (t) \,dt 
+\end{equation}
+gdzie Q to wskaźnik jakości regulacji oraz $\mathcal{E}$ to uchyb. W celu zbadania wpływu wartości $k_2$ na parametr $Q$, zbudowano schemat w Simulinku (rys. \ref{jakosc_schemat}) i wygenerowano wykres zależności $Q(k_2)$ (rys. \ref{q_k2}).
+
+\zdjecie{jakosc_schemat.png}{Schemat w Simulinku do badania kryterium jakości}{jakosc_schemat}
+
+\zdjecie{q_k2.png}{Kryterium jakości w zależności od różnych wartości $k_2$}{q_k2}
+
+Wartości $k_2$ były zmieniane od 0,1 do 1,9 (czyli w granicach stabilności układu) co 0,1. Należy zaznaczyć, że tym lepsza jest jakość regulacji, im mniejsze wartości osiągają wskaźniki do badania jakości regulacji. Zatem, najlepszą jakość regulacji da układ z najmniejszą wartością $k_2$ w granicach stabilności układu - z rysunku \ref{q_k2} będzie to $k_2 = 0,1$.
+
+\section{Badanie układu automatycznej regulacji w czasie dyskretnym}
+Dla dyskretnego układu automatycznej regulacji typu PI i ustalonych wartości jego nastaw $k_1 = 5$ oraz $k_2 = 0,1$ obserwowano zależność kryterium jakości Q od czasu próbkowania $T_d$. W tym celu utworzono schemat w Simulinku (rys. \ref{schemat_dyskr}). Transmitancję regulatora zapisano w dziedzinie czasu dyskretnego:
+\begin{equation}
+    K_R(s) = k_1 + \frac{k_2}{s} = \frac{k_1s+k_2}{s} \Rightarrow K_R(z) = \frac{k_1z+k_2}{z}
+\end{equation}
+\section{Podsumowanie i wnioski}
+
+
+\end{document}
