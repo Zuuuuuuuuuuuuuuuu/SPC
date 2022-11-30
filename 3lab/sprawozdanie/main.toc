@@ -4,5 +4,7 @@
 \contentsline {subsection}{\numberline {2.1}Układ automatycznej regulacji z regulatorem typu P}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Układ automatycznej regulacji z regulatorem typu PI}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Wskaźnik jakości regulacji}{4}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Badanie układu automatycznej regulacji w czasie dyskretnym}{5}{section.3}%
-\contentsline {section}{\numberline {4}Podsumowanie i wnioski}{6}{section.4}%
+\contentsline {section}{\numberline {3}Badanie układu automatycznej regulacji w czasie dyskretnym}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Odpowiedź UAR w zależności od czasu próbkowania}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Wskaźnik jakości regulacji}{7}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Podsumowanie i wnioski}{7}{section.4}%

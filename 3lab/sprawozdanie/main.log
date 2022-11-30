@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.3.8)  26 NOV 2022 17:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.3.8)  30 NOV 2022 19:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -847,7 +847,7 @@ Package pgfplots Warning: running in backwards compatibility mode (unsuitable ti
  on input line 28.
 
 (/home/zuzanna/Pulpit/sem5/SPC/3lab/sprawozdanie/strona_tytulowa.tex
-<../../logo-PWr.png, id=35, 540.0978pt x 135.8676pt>
+<../../logo-PWr.png, id=43, 540.0978pt x 135.8676pt>
 File: ../../logo-PWr.png Graphic file (type png)
 <use ../../logo-PWr.png>
 Package pdftex.def Info: ../../logo-PWr.png  used on input line 4.
@@ -864,70 +864,79 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.43 \newpage
               [1]
-<sim_p.png, id=63, 1935.23pt x 463.7325pt>
+<sim_p.png, id=73, 1935.23pt x 463.7325pt>
 File: sim_p.png Graphic file (type png)
 <use sim_p.png>
 Package pdftex.def Info: sim_p.png  used on input line 51.
 (pdftex.def)             Requested size: 511.86491pt x 122.65501pt.
-<reg_p.png, id=66, 2551.5325pt x 1082.0425pt>
+<reg_p.png, id=76, 2551.5325pt x 1082.0425pt>
 File: reg_p.png Graphic file (type png)
 <use reg_p.png>
 Package pdftex.def Info: reg_p.png  used on input line 55.
 (pdftex.def)             Requested size: 511.86491pt x 217.06508pt.
  [2 </home/zuzanna/Pulpit/sem5/SPC/3lab/sprawozdanie/sim_p.png>]
-<schemat_pi.png, id=81, 1754.555pt x 548.0475pt>
+<schemat_pi.png, id=91, 1754.555pt x 548.0475pt>
 File: schemat_pi.png Graphic file (type png)
 <use schemat_pi.png>
 Package pdftex.def Info: schemat_pi.png  used on input line 62.
 (pdftex.def)             Requested size: 511.86491pt x 159.88303pt.
-<char_pi.png, id=83, 2105.8675pt x 899.36pt>
+<char_pi.png, id=93, 2105.8675pt x 899.36pt>
 File: char_pi.png Graphic file (type png)
 <use char_pi.png>
 Package pdftex.def Info: char_pi.png  used on input line 66.
 (pdftex.def)             Requested size: 511.86491pt x 218.59543pt.
  [3 </home/zuzanna/Pulpit/sem5/SPC/3lab/sprawozdanie/reg_p.png> </home/zuzanna/Pulpit/sem5/SPC/3lab/sprawozdanie/schemat_pi.png>]
-<jakosc_schemat.png, id=94, 1557.82pt x 668.4975pt>
+<jakosc_schemat.png, id=104, 1557.82pt x 668.4975pt>
 File: jakosc_schemat.png Graphic file (type png)
 <use jakosc_schemat.png>
 Package pdftex.def Info: jakosc_schemat.png  used on input line 78.
 (pdftex.def)             Requested size: 511.86491pt x 219.64601pt.
  [4 </home/zuzanna/Pulpit/sem5/SPC/3lab/sprawozdanie/char_pi.png>]
-<q_k2.png, id=105, 2129.9575pt x 909.3975pt>
+<q_k2.png, id=115, 2129.9575pt x 909.3975pt>
 File: q_k2.png Graphic file (type png)
 <use q_k2.png>
 Package pdftex.def Info: q_k2.png  used on input line 80.
 (pdftex.def)             Requested size: 511.86491pt x 218.53738pt.
-
-
-LaTeX Warning: Reference `schemat_dyskr' on page 5 undefined on input line 85.
-
-[5 </home/zuzanna/Pulpit/sem5/SPC/3lab/sprawozdanie/jakosc_schemat.png> </home/zuzanna/Pulpit/sem5/SPC/3lab/sprawozdanie/q_k2.png>] [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
+ [5 </home/zuzanna/Pulpit/sem5/SPC/3lab/sprawozdanie/jakosc_schemat.png> </home/zuzanna/Pulpit/sem5/SPC/3lab/sprawozdanie/q_k2.png>]
+<schemat_Td.png, id=124, 1276.77pt x 497.86pt>
+File: schemat_Td.png Graphic file (type png)
+<use schemat_Td.png>
+Package pdftex.def Info: schemat_Td.png  used on input line 88.
+(pdftex.def)             Requested size: 511.86491pt x 199.59627pt.
+<rozne_Td.png, id=126, 2061.7025pt x 887.315pt>
+File: rozne_Td.png Graphic file (type png)
+<use rozne_Td.png>
+Package pdftex.def Info: rozne_Td.png  used on input line 92.
+(pdftex.def)             Requested size: 511.86491pt x 220.28471pt.
+ [6 </home/zuzanna/Pulpit/sem5/SPC/3lab/sprawozdanie/schemat_Td.png> </home/zuzanna/Pulpit/sem5/SPC/3lab/sprawozdanie/rozne_Td.png>]
+<Q(Td).png, id=137, 2133.9725pt x 921.4425pt>
+File: Q(Td).png Graphic file (type png)
+<use Q(Td).png>
+Package pdftex.def Info: Q(Td).png  used on input line 100.
+(pdftex.def)             Requested size: 511.86491pt x 221.02417pt.
+ [7 </home/zuzanna/Pulpit/sem5/SPC/3lab/sprawozdanie/Q(Td).png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
  (/home/zuzanna/Pulpit/sem5/SPC/3lab/sprawozdanie/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 128C2D86A1CB5978F2BE5D00729577F0;577.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
+(rerunfilecheck)             Checksum: 1FF77F21ED1933CCEEF489F4E9F934E3;751.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 115.
  ) 
 Here is how much of TeX's memory you used:
- 30898 strings out of 483148
- 712165 string characters out of 5965417
+ 30928 strings out of 483148
+ 712587 string characters out of 5965417
  1131295 words of memory out of 5000000
- 45323 multiletter control sequences out of 15000+600000
- 546300 words of font info for 50 fonts, out of 8000000 for 9000
+ 45344 multiletter control sequences out of 15000+600000
+ 546637 words of font info for 51 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
  68i,6n,98p,769b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1728.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.603pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2986.603pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti2488.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on /home/zuzanna/Pulpit/sem5/SPC/3lab/sprawozdanie/main.pdf (7 pages, 503190 bytes).
+ </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1728.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.603pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2986.603pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti2488.600pk> </home/zuzanna/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on /home/zuzanna/Pulpit/sem5/SPC/3lab/sprawozdanie/main.pdf (8 pages, 617476 bytes).
 PDF statistics:
- 490 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 104 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 530 PDF objects out of 1000 (max. 8388607)
+ 178 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 135 words of extra memory for PDF output out of 10000 (max. 10000000)
 

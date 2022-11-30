@@ -82,11 +82,34 @@ gdzie Q to wskaźnik jakości regulacji oraz $\mathcal{E}$ to uchyb. W celu zbad
 Wartości $k_2$ były zmieniane od 0,1 do 1,9 (czyli w granicach stabilności układu) co 0,1. Należy zaznaczyć, że tym lepsza jest jakość regulacji, im mniejsze wartości osiągają wskaźniki do badania jakości regulacji. Zatem, najlepszą jakość regulacji da układ z najmniejszą wartością $k_2$ w granicach stabilności układu - z rysunku \ref{q_k2} będzie to $k_2 = 0,1$.
 
 \section{Badanie układu automatycznej regulacji w czasie dyskretnym}
-Dla dyskretnego układu automatycznej regulacji typu PI i ustalonych wartości jego nastaw $k_1 = 5$ oraz $k_2 = 0,1$ obserwowano zależność kryterium jakości Q od czasu próbkowania $T_d$. W tym celu utworzono schemat w Simulinku (rys. \ref{schemat_dyskr}). Transmitancję regulatora zapisano w dziedzinie czasu dyskretnego:
-\begin{equation}
-    K_R(s) = k_1 + \frac{k_2}{s} = \frac{k_1s+k_2}{s} \Rightarrow K_R(z) = \frac{k_1z+k_2}{z}
-\end{equation}
+\subsection{Odpowiedź UAR w zależności od czasu próbkowania}
+Dla dyskretnego układu automatycznej regulacji typu PI i ustalonych wartości jego nastaw obserwowano wpływ różnych czasów próbkowania na charakterystykę układu dyskretnego. W tym celu utworzono schemat w Simulinku (rys. \ref{schemat_dyskr}). 
+
+\zdjecie{schemat_Td.png}{Schemat w Simulinku do badania układu dyskretnego}{schemat_dyskr}
+
+Transmitancję regulatora zapisano w dziedzinie czasu dyskretnego: $ \frac{a \cdot z +b}{z-1}$, gdzie wartości $a, b$ zostały wyznaczone przez funkcję $c2d$. Badania zostały przeprowadzone dla wartości regulatora $k_1 = 1$ oraz $k_2 = 0.5$, od których zależy wartość regulatora dyskretnego. Na początku obserwowano charakterystykę czasową UAR dla różnych czasów próbkowania $Td$ (rys. \ref{rozne_Td}).
+
+\zdjecie{rozne_Td.png}{Charakterystyka czasowa UAR dla różnych czasów próbkowania}{rozne_Td}
+
+Z badania wynika, że optymalne czasy próbkowania to na przykład $Td = 0,3$, $Td = 0,5$ czy $Td= 0,8$. Dla większych wartości $Td$ zauważa się większe przeregulowania, podczas gdy czas stabilizacji jest porównywalny. Natomiast dla mniejszych wartości $Td$ czas stabilizacji znacznie się wydłuża.
+
+\subsection{Wskaźnik jakości regulacji}
+Następnie przeprowadzono badanie wskaźnika regulacji, jakim jest całka z kwadratu uchybu. Poniższe zdjęcie przedstawia zależność $Q(Td)$ dla różnych czasów próbkowania (rys. \ref{q(td)}).
+
+
+\zdjecie{Q(Td).png}{Zależność kryterium jakości Q od czasu próbkowania $T_d$.}{q(td)}
+
+Badanie potwierdza, że optymalne czasy próbkowania (zapewniające najlepszą jakość regulacji) mieszczą się w zakresie $Td = [0.4, 1.3]$. Zarówno mniejsze jak i większe wartości czasu próbkowania gwarantują gorszą jakość regulacji.
+
 \section{Podsumowanie i wnioski}
+Po przeprowadzeniu badań nad układem automatycznej regulacji wywnioskowano, że:
+\begin{itemize}
+    \item regulator typu I dołączony równolegle do regulatora proporcjonalnego pozwala zmniejszyć uchyb
+    \item całka z kwadratu uchybu pozwala wywnioskować jakość regulacji dla zadanych parametrów
+    \item im mniejszy parametr $k_2$ w regulatorze całkującym, tym mniejsza wartość $Q$ (wskaźnika regulacji), czyli lepsza jakość regulacji
+    \item czas próbkowania ma wpływ na odpowiedź UAR z regulatorem w czasie dyskretnym
+    \item optymalne czasy próbkowania 
+\end{itemize}
 
 
 \end{document}
