@@ -54,7 +54,7 @@ Ten układ automatycznej regulacji jest stabilny dla $k_1 \in (-1, 8) $. Dla wyb
 
 \zdjecie{reg_p.png}{Charakterystyki czasowe układu automatycznej regulacji dla wybranych wartości regulatora proporcjonalnego}{czasowe}
 
-Dla wartości $k_1 = 5$ zauważa się, że układ ma przeregulowania na początku, później stabilizuje się na wartości około 0,82. 
+Na przykład, dla wartości $k_1 = 5$ zauważa się, że układ ma przeregulowania na początku, później stabilizuje się na wartości około 0,82. 
 
 \subsection{Układ automatycznej regulacji z regulatorem typu PI}
 Dla wybranej wartości $k_1 = 5$ dołączono do regulatora równolegle gałąź z członem całkującym. Ta operacja ma na celu zmniejszenie uchybu.
@@ -94,10 +94,10 @@ Transmitancję regulatora zapisano w dziedzinie czasu dyskretnego: $ \frac{a \cd
 Z badania wynika, że optymalne czasy próbkowania to na przykład $Td = 0,3$, $Td = 0,5$ czy $Td= 0,8$. Dla większych wartości $Td$ zauważa się większe przeregulowania, podczas gdy czas stabilizacji jest porównywalny. Natomiast dla mniejszych wartości $Td$ czas stabilizacji znacznie się wydłuża.
 
 \subsection{Wskaźnik jakości regulacji}
-Następnie przeprowadzono badanie wskaźnika regulacji, jakim jest całka z kwadratu uchybu. Poniższe zdjęcie przedstawia zależność $Q(Td)$ dla różnych czasów próbkowania (rys. \ref{q(td)}).
+Następnie przeprowadzono badanie wskaźnika jakości regulacji, jakim jest całka z kwadratu uchybu. Poniższe zdjęcie przedstawia zależność $Q(Td)$ dla różnych czasów próbkowania (rys. \ref{q(td)}).
 
 
-\zdjecie{Q(Td).png}{Zależność kryterium jakości Q od czasu próbkowania $T_d$.}{q(td)}
+\zdjecie{Q(Td).png}{Zależność kryterium jakości Q od czasu próbkowania $T_d$}{q(td)}
 
 Badanie potwierdza, że optymalne czasy próbkowania (zapewniające najlepszą jakość regulacji) mieszczą się w zakresie $Td = [0.4, 1.3]$. Zarówno mniejsze jak i większe wartości czasu próbkowania gwarantują gorszą jakość regulacji.
 
@@ -106,9 +106,12 @@ Po przeprowadzeniu badań nad układem automatycznej regulacji wywnioskowano, ż
 \begin{itemize}
     \item regulator typu I dołączony równolegle do regulatora proporcjonalnego pozwala zmniejszyć uchyb
     \item całka z kwadratu uchybu pozwala wywnioskować jakość regulacji dla zadanych parametrów
+    \item parametr $k_2$ ma wpływ na przeregulowania i czas stabilizacji układu
     \item im mniejszy parametr $k_2$ w regulatorze całkującym, tym mniejsza wartość $Q$ (wskaźnika regulacji), czyli lepsza jakość regulacji
     \item czas próbkowania ma wpływ na odpowiedź UAR z regulatorem w czasie dyskretnym
-    \item optymalne czasy próbkowania 
+    \item optymalne czasy próbkowania dla przeprowadzonych badań mieszczą się w zakresie $Td = [0.3, 0.8]$
+    \item dla wartości spoza tego zakresu zauważalne były większe przeregulowania lub dłuższy czas stabilizacji
+    \item wskaźnik jakości regulacji potwierdził wartości czasu próbkowania gwarantujące najlepszą jakość regulacji.
 \end{itemize}
 
 
